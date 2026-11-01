@@ -6,7 +6,7 @@
 <title>Alibi AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&display=swap">
 <style>
 body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 /* Layout: a single phone canvas (390×844) on a soft studio backdrop; flow guide beside it on wide screens, full-bleed app on phones. */
@@ -16,13 +16,14 @@ body{margin:0}img{max-width:100%}[hidden]{display:none!important}
   --orange:#FF6A1A; --orange-2:#FF9248; --peach:#FFD3B2; --hat:#F7D1A9; --plum:#3B2341; --pink:#FF86A6; --lilac:#C9B5F2;
   --ok:#22B864; --bad:#EE4247; --warn:#F2A20C;
   --night:#120C15; --night-2:#2B1D30; --on-night:#FFF8F3; --on-night-2:rgba(255,248,243,.62); --glass:rgba(255,255,255,.13);
-  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  --f-body:"Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --f-mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+  /* one family everywhere (stand-in for Resist Sans Text; draws Ə/ə and all Turkish letters) */
+  --f-display:"Hanken Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-body:"Hanken Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
   color-scheme:light;
 }
 html,body{height:100%}
-body{background:var(--stage);color:var(--ink);font-family:var(--f-body);font-size:15px;-webkit-font-smoothing:antialiased}
+body{background:var(--stage);color:var(--ink);font-family:var(--f-body);font-size:15px;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 button:focus-visible,textarea:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 *{box-sizing:border-box}
